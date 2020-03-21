@@ -1,4 +1,6 @@
 import React from 'react'
+import { MdClose } from 'react-icons/md'
+import { FiCheckCircle } from 'react-icons/fi'
 
 const Todo = ({ todo, index, completeTodo, removeTodo }) => {
   let style = {
@@ -14,13 +16,14 @@ const Todo = ({ todo, index, completeTodo, removeTodo }) => {
 
   return (
     <div className='todo' style={style}>
-      {todo.text}
       <div>
-        <button onClick={handleComplete}>
-          {todo.isCompleted ? 'incomplete' : 'complete'}
-        </button>
-        <button onClick={handleRemove}>X</button>
+        <span onClick={handleComplete} className='btn-check'>
+          {todo.isCompleted ? <FiCheckCircle /> : <FiCheckCircle />}
+        </span>
+        {todo.text}
       </div>
+
+      <MdClose onClick={handleRemove} className='btn-close' />
     </div>
   )
 }

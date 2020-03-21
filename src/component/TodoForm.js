@@ -24,6 +24,7 @@ const TodoForm = ({ addTodo }) => {
         value={value}
         onChange={handleValChange}
         placeholder='Input task'
+        autoFocus
       />
     </form>
   )
