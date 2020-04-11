@@ -1,7 +1,21 @@
 {
-  "name": "react-ts-cypress-todo",
+  "name": "react-cypress-e2e",
   "version": "0.1.0",
   "private": true,
+  "description": "React Todo app with the tests written in Cypress.",
+  "keywords": [
+    "react",
+    "cypress",
+    "e2e",
+    "todo"
+  ],
+  "scripts": {
+    "start": "react-scripts start",
+    "cypress": "cypress open",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -11,12 +25,9 @@
     "react-icons": "^3.9.0",
     "react-scripts": "3.4.1"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "cypress": "cypress open",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+  "devDependencies": {
+    "cypress": "^4.3.0",
+    "eslint-plugin-cypress": "^2.10.3"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -32,9 +43,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "cypress": "^4.2.0",
-    "eslint-plugin-cypress": "^2.10.3"
   }
 }
